@@ -1,4 +1,5 @@
-build:
-  image: python:3.6
-  commands:
-    python -c "print('hello drone')"
+pipeline:
+  build:
+    image: python:3.6
+    commands:
+      python -c "print('hello drone')"
