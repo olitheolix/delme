@@ -1,0 +1,43 @@
+{
+    "metaInfo": {
+        "name": "foobar"
+    },
+    "primaryInfo": {
+        "isFlux": false,
+        "resources": {
+            "cpuRequest": "100m",
+            "cpuLimit": "",
+            "memRequest": "100M",
+            "memLimit": "101m"
+        },
+        "probes": {
+            "readiness": "http://localhost:8080/ready",
+            "liveness": "http://localhost:8080/live"
+        },
+        "envVars": [],
+        "secrets": [],
+        "services": {
+            "port": 80,
+            "targetPort": 8080
+        }
+    },
+    "canaryInfo": {
+        "isFlux": false,
+        "resources": {
+            "cpuRequest": "100m",
+            "cpuLimit": "",
+            "memRequest": "100M",
+            "memLimit": "101m"
+        },
+        "probes": {
+            "readiness": "http://localhost:8080/ready",
+            "liveness": "http://localhost:8080/live"
+        },
+        "envVars": [],
+        "secrets": [],
+        "services": {
+            "port": 80,
+            "targetPort": 8080
+        }
+    }
+}
